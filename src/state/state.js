@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import Button from './button';
 import Display from './display';
 
@@ -13,15 +13,15 @@ class SimpleGoldenAcornApp extends Component {
     // this.decrement = this.decrement.bind(this);
   }
 
-  componentDidMount() {
-    window.addEventListener('keydown', (e) => {
-      if (e.keyCode === 38) {
-        this.handle(+1)();
-      } else if (e.keyCode === 40) {
-        this.handle(-1)();
-      }
-    });
-  }
+  // componentDidMount() {
+  //   window.addEventListener('keydown', (e) => {
+  //     if (e.keyCode === 38) {
+  //       this.handle(+1)();
+  //     } else if (e.keyCode === 40) {
+  //       this.handle(-1)();
+  //     }
+  //   });
+  // }
 
   handle(param) {
     return () => {
@@ -46,10 +46,12 @@ class SimpleGoldenAcornApp extends Component {
   }
 }
 
-ReactDOM.render(
-  <SimpleGoldenAcornApp />,
-  document.getElementById('root'),
-);
+export default SimpleGoldenAcornApp;
+
+// ReactDOM.render(
+//   <SimpleGoldenAcornApp />,
+//   document.getElementById('root'),
+// );
 
 // window.addEventListener('keydown', (e) => {
 //   if (e.keyCode === 38) {

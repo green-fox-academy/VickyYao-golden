@@ -1,17 +1,8 @@
-import { createStore } from 'redux';
 import React from 'react';
-import { render } from 'react-dom';
-import { Provider } from 'react-redux';
-// import { composeWithDevTools } from 'redux-devtools-extension';
-import App from './App';
-import rootReducer from './reducers/index';
+import ReactDOM from 'react-dom';
+import RouterGolden from './router';
 
-const store = createStore(rootReducer);
-
-render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
+ReactDOM.render(
+  <RouterGolden />,
   document.getElementById('root'),
 );
-// export default store;

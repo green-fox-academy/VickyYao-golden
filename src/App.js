@@ -1,13 +1,10 @@
-import React from 'react';
-import BuyAcorn from './container/BuyAcorn';
-import EatAcorn from './container/EatAcorn';
-import DisplayAcorn from './container/DisplayAcorn';
+import RouterGolden from './router';
+// import AppRedux from './container/AppRedux';
 
-const App = () => (
+const App = children => (
   <div>
-    <BuyAcorn />
-    <DisplayAcorn />
-    <EatAcorn />
+    <RouterGolden />
+    {children}
   </div>
 );
 
